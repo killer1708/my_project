@@ -6,7 +6,7 @@ class ArgParse(object):
 		parser = argparse.ArgumentParser()
 		parser.add_argument("--input1", action="store", required=True, help="input filename")
 		parser.add_argument("--input2", action="store", help="output file, last n lines or first n lines")
-		parser.add_argument("--input3", action="store", help="flag")
+		parser.add_argument("--input3", action="store", help="choose from f and l")
 		args = parser.parse_args()
 		f_arg = args.input1
 		s_arg = args.input2
